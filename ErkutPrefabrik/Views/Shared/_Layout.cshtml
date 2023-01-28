@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ErkutPrefabrik</title>
+    
+    <link rel="stylesheet" href="~/css/style-starter.css" asp-append-version="true" />
+    
+</head>
+<body>
+    @RenderBody()
+    <!--/footer-9-->
+    <footer class="w3l-footer9">
+        <section class="footer-inner-main py-5">
+            <div class="container py-md-4">
+                <div class="right-side">
+                    <div class="row footer-hny-grids sub-columns">
+                        <div class="col-lg-3 sub-one-left">
+                            <h6>Hakkımızda </h6>
+                            <p class="footer-phny pe-lg-5">Siz hayal edin biz gerçekleştirelim. Samsun'un Atakum ilçesinde bulunan ofisimiz ile bir çok bölgede başarılı projelerimiz bulunmaktadır.</p>
+                            <div class="columns-2 mt-4 pt-lg-3">
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com/ErkutPrefabrik55"><span class="fab fa-facebook-f"></span></a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.instagram.com/erkutprefabrik/"><span class="fab fa-instagram"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/s/sam_kon_vill"><span class="fab fa-telegram-plane"></span></a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 sub-two-right">
+                            <h6>Şirketimiz</h6>
+                            <ul>
+
+                                <li>
+                                    <a href="#why"><i class="fas fa-angle-right"></i> Neden Biz</a>
+                                </li>
+                                <li>
+                                    <a href="#licence">
+                                        <i class="fas fa-angle-right"></i>Takım Arkadaşlarımız
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#log">
+                                        <i class="fas fa-angle-right"></i>Hizmetlerimiz
+                                    </a>
+                                </li>
+
+                                <li><a href="#career"><i class="fas fa-angle-right"></i> Önceki İşlerimiz</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 sub-two-right">
+                            <h6>Ürünler</h6>
+                            <ul>
+                                <li>
+                                    <a href="#processing"><i class="fas fa-angle-right"></i> Konteyner</a>
+                                </li>
+                                <li>
+                                    <a href="#research"><i class="fas fa-angle-right"></i> Prefabrik Ev</a>
+                                </li>
+                               @* <li>
+                                    <a href="#metal"><i class="fas fa-angle-right"></i> Rent Properties</a>
+                                </li>
+                                <li>
+                                    <a href="#metal"><i class="fas fa-angle-right"></i> Property Search</a>
+                                </li>*@
+
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 sub-two-right">
+                            <h6>İletişim</h6>
+                            <ul>
+                                <li>
+                                    <a href="mailto:erkutyapi@gmail.com"><i class="fas fa-angle-right"></i> Mail</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+90-543-947-40-64"><i class="fas fa-angle-right"></i> Telefon</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/ErkutPrefabrik55"><i class="fas fa-angle-right"></i> Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/erkutprefabrik/"><i class="fas fa-angle-right"></i> İnstagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/5439474064?text=Merhaba%20Fiyat%20Bilgisi%20Alabilir%20miyim%20?%20"><i class="fas fa-angle-right"></i> WhatsApp</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="below-section mt-5 pt-lg-3">
+                    <div class="copyright-footer">
+                        <div class="columns text-start">
+                            <p>
+                                © 2023 Erkut Prefabrik Tüm Hakları Saklıdır.
+                                
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Js scripts -->
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+        <!-- //move top -->
+    </footer>
+    <!--//footer-9 -->
+    <!-- Template JavaScript -->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/theme-change.js"></script>
+
+    <!--/search-->
+    <script src="~/js/modernizr.custom.js"></script>
+    <script src="~/js/classie.js"></script>
+    <script src="~/js/demo1.js"></script>
+    <!--//search-->
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+    <!-- //MENU-JS -->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <!-- //bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
