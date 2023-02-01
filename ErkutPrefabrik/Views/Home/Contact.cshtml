@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewData["Title"] = "İletişim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1>
+                    <a class="navbar-brand" href="index">
+                        Erkut<span class="sub-color">Prefabrik</span>
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services">Hizmetlerimiz</a>
+                        </li>
+
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="contact">İletişim</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <!--/inner-page-->
+    <div class="inner-banner py-5">
+        <section class="w3l-breadcrumb text-left py-sm-5 ">
+            <div class="container">
+                <div class="w3breadcrumb-gids">
+                    <div class="w3breadcrumb-left text-left">
+                        <h2 class="inner-w3-title mt-sm-5 mt-4">
+                            İletişime Geçin
+                        </h2>
+
+                    </div>
+                    <div class="w3breadcrumb-right">
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index">Ana Sayfa</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> İletişim</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!--//inner-page-->
+    <!-- contacts-5-grid -->
+    <div class="w3l-contact-10 py-5" id="contact">
+        <div class="form-41-mian pt-lg-4 pt-md-3 pb-lg-4">
+            <div class="container">
+                <div class="heading text-center mx-auto">
+                    <h5 class="title-subw3hny text-center">Bize Ulaşın</h5>
+                    <h3 class="title-w3l"> <span class="inn-text">Herhangi Bir Sorunuz Mu Var? </span></h3>
+                </div>
+
+                <div class="contacts-5-grid-main mt-5">
+                    <div class="contacts-5-grid">
+                        <div class="map-content-5">
+                            <div class="d-grid grid-col-2 justify-content-center">
+                                <div class="contact-type">
+                                    
+                                    <div class="address-grid">
+                                        <a href="https://www.google.com/maps?ll=41.3228,36.295586&z=18&t=m&hl=tr&gl=TR&mapclient=embed&q=372.+Sk.+No:31+Esenevler+55200+Atakum/Samsun">
+                                        <span class="fas fa-map-marked-alt"></span></a>
+                                        <h6>Adres</h6>
+                                        <a href="https://www.google.com/maps?ll=41.3228,36.295586&z=18&t=m&hl=tr&gl=TR&mapclient=embed&q=372.+Sk.+No:31+Esenevler+55200+Atakum/Samsun" class="link1">Esenevler, 372. Sk. No:31, 55200 Atakum/Samsun</a>
+                                      
+                                    </div>
+                                    
+                                    <div class="address-grid">
+                                        <a href="mailto:erkutyapi@gmail.com">
+                                            <span class="fas fa-envelope-open-text"></span></a> 
+                                        <h6>Email</h6>
+                                        <a href="mailto:erkutyapi@gmail.com" class="link1">erkutyapi@gmail.com</a>
+                                        
+
+                                    </div>
+                                    <div class="address-grid">
+                                        
+                                        <ah ref="tel:+90 0543 945 31 57">
+                                            <span class="fas fa-phone-alt"></span></a>
+                                        <h6>Telefon</h6>
+                                        <a href="tel:+90 0543 945 31 57" class="link1">+90 0543 945 31 57</a>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-inner-cont mt-5">
+                    <form action="Contact" method="post" class="signin-form">
+                        <div class="form-grids">
+                            <div class="form-input">
+                                <input type="text" name="Name" id="w3lName" placeholder="İsim" required="" />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="Subject" id="w3lSubject" placeholder="Konu " required />
+                            </div>
+                            <div class="form-input">
+                                <input type="email" name="From" id="w3lSender" placeholder="Mail" required />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="Phone" id="w3lPhone" placeholder="Telefon Numarası" required />
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="w3lMessage" id="Context" placeholder="Mesajınızı Giriniz" required=""></textarea>
+                        </div>
+                        <div class="w3-submit text-right">
+                            <button id ="mail" type = "submit" class="btn btn-style btn-primary">Mesaj Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- //contacts-5-grid -->
+    </div>
+
+    <div class="contacts-sub-5">
+        <iframe  style="filter: invert(5%)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.9050517347782!2d36.29539434764577!3d41.322995988447076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408879b53a2e34b1%3A0xeaa9e97b738ed03e!2sEsenevler%2C%20372.%20Sk.%20No%3A31%2C%2055200%20Atakum%2FSamsun!5e0!3m2!1str!2str!4v1675214624246!5m2!1str!2str" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </body>
+
