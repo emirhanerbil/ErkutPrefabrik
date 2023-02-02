@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\classie.js" />
+    <None Include="wwwroot\js\demo1.js" />
+    <None Include="wwwroot\js\jquery-1.9.1.min.js" />
+    <None Include="wwwroot\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\js\modernizr.custom.js" />
+    <None Include="wwwroot\js\owl.carousel.js" />
     <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\theme-change.js" />
   </ItemGroup>
 
   <ItemGroup>

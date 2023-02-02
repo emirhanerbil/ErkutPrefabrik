@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ErkutPrefabrik</title>
 
-    <link rel="stylesheet" href="~/css/style-starter.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style-liberty.css" asp-append-version="true" />
 
 </head>
 <body>
@@ -41,10 +41,10 @@
                             <ul>
 
                                 <li>
-                                    <a href="#why"><i class="fas fa-angle-right"></i> Neden Biz</a>
+                                    <a href="about#about2"><i class="fas fa-angle-right"></i> Neden Biz</a>
                                 </li>
                                 <li>
-                                    <a href="#licence">
+                                    <a href="about#team">
                                         <i class="fas fa-angle-right"></i>Takım Arkadaşlarımız
                                     </a>
                                 </li>
@@ -125,8 +125,6 @@
             <img alt="Chat on WhatsApp" style=" width: 100%;margin-bottom: 25px;" src="~/images/small1.png" />
         </a>
         <button onclick="topFunction()" id="movetop" title="Go to top">
-
-
             <span class="fas fa-level-up-alt" aria-hidden="true"></span>
         </button>
         <script>
@@ -156,7 +154,81 @@
     <!-- Template JavaScript -->
     <script src="~/js/jquery-3.3.1.min.js"></script>
     <script src="~/js/theme-change.js"></script>
+    <!--light-box-files -->
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <script src="~/js/jquery.chocolat.js"></script>
+    <script type="text/javascript ">
+        $(function() {
+            $('.w3_agile_portfolio_grid a').Chocolat();
+        });
 
+    </script>
+    <!-- /js for portfolio lightbox -->
+    <!-- stats number counter-->
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+
+    </script>
+    <!-- //stats number counter -->
+    <!-- owlcarousel -->
+    <script src="~/js/owl.carousel.js"></script>
+    <!-- script for banner slider-->
+    <script>
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 1
+                    },
+                    667: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+
+    </script>
+    <!-- //script -->
+    <!-- //tesimonials-->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+
+    </script>
+    <!-- //tesimonials-->
+    
     <!--/search-->
     <script src="~/js/modernizr.custom.js"></script>
     <script src="~/js/classie.js"></script>
@@ -203,6 +275,5 @@
     <!-- //disable body scroll which navbar is in active -->
     <!-- //bootstrap -->
     <script src="~/js/bootstrap.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
