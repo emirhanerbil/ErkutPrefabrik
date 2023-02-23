@@ -56,10 +56,10 @@ namespace ErkutPrefabrik.Controllers
             smtp.Credentials = new NetworkCredential("emirhan_1095_2001@hotmail.com", "010203040506Ee");
             smtp.Host = "smtp.live.com";
             smtp.EnableSsl = true;
-            smtp.Port = 465;    
+            smtp.Port = 465;
 
 
-            
+
 
 
             return View();
@@ -68,12 +68,28 @@ namespace ErkutPrefabrik.Controllers
         {
             return View();
         }
-        public IActionResult Blog()
+        public IActionResult Celikev()
         {
             return View();
         }
+        public IActionResult Villa2()
+        {
+            return View();
+        }
+        public IActionResult Prefabrik1()
+        {
+            return View();
+        }
+        public IActionResult Prefabrik2()
+        {
+            return View();
+        }
+        public IActionResult Prefabrik()
+        {
+            return View();
+        }
+
+
+
     }
-
-
-
 }
