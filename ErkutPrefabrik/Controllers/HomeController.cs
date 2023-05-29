@@ -53,7 +53,7 @@ namespace ErkutPrefabrik.Controllers
 
             smtp.UseDefaultCredentials = false;
 
-            smtp.Credentials = new NetworkCredential("emirhan_1095_2001@hotmail.com", "010203040506Ee");
+            smtp.Credentials = new NetworkCredential("emirhan_1095_2001@hotmail.com", sifre);
             smtp.Host = "smtp.live.com";
             smtp.EnableSsl = true;
             smtp.Port = 465;
